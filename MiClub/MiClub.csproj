@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56103CC8-62B2-453B-B8B7-5F5F70D863C4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiClub</RootNamespace>
+    <AssemblyName>MiClub</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Consultas\ConsultaClubs.aspx" />
+    <Content Include="Consultas\ConsultaMiembros.aspx" />
+    <Content Include="LogIn.aspx" />
+    <Content Include="Principal.aspx" />
+    <Content Include="Recursos\css\animate.min.css" />
+    <Content Include="Recursos\css\bootstrap.css" />
+    <Content Include="Recursos\css\bootstrap.min.css" />
+    <Content Include="Recursos\css\creative.css" />
+    <Content Include="Recursos\font-awesome\css\font-awesome.css" />
+    <Content Include="Recursos\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Recursos\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Recursos\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Recursos\img\header.jpg" />
+    <Content Include="Recursos\img\portfolio\1.jpg" />
+    <Content Include="Recursos\img\portfolio\2.jpg" />
+    <Content Include="Recursos\img\portfolio\3.jpg" />
+    <Content Include="Recursos\img\portfolio\4.jpg" />
+    <Content Include="Recursos\img\portfolio\5.jpg" />
+    <Content Include="Recursos\img\portfolio\6.jpg" />
+    <Content Include="Recursos\js\bootstrap.js" />
+    <Content Include="Recursos\js\bootstrap.min.js" />
+    <Content Include="Recursos\js\cbpAnimatedHeader.js" />
+    <Content Include="Recursos\js\classie.js" />
+    <Content Include="Recursos\js\creative.js" />
+    <Content Include="Recursos\js\jquery.easing.min.js" />
+    <Content Include="Recursos\js\jquery.fittext.js" />
+    <Content Include="Recursos\js\jquery.js" />
+    <Content Include="Recursos\js\wow.min.js" />
+    <Content Include="Registros\RegistroClubes.aspx" />
+    <Content Include="Registros\RegistroCobros.aspx" />
+    <Content Include="Registros\RegistroCxC.aspx" />
+    <Content Include="Registros\RegistroMiembros.aspx" />
+    <Content Include="Registros\RegistroUsuarios.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consultas\ConsultaClubs.aspx.cs">
+      <DependentUpon>ConsultaClubs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaClubs.aspx.designer.cs">
+      <DependentUpon>ConsultaClubs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaMiembros.aspx.cs">
+      <DependentUpon>ConsultaMiembros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaMiembros.aspx.designer.cs">
+      <DependentUpon>ConsultaMiembros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.Master.cs">
+      <DependentUpon>LogIn.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogIn.Master.designer.cs">
+      <DependentUpon>LogIn.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.aspx.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros\RegistroClubes.aspx.cs">
+      <DependentUpon>RegistroClubes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroClubes.aspx.designer.cs">
+      <DependentUpon>RegistroClubes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistroCobros.aspx.cs">
+      <DependentUpon>RegistroCobros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroCobros.aspx.designer.cs">
+      <DependentUpon>RegistroCobros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistroCxC.aspx.cs">
+      <DependentUpon>RegistroCxC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroCxC.aspx.designer.cs">
+      <DependentUpon>RegistroCxC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistroMiembros.aspx.cs">
+      <DependentUpon>RegistroMiembros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroMiembros.aspx.designer.cs">
+      <DependentUpon>RegistroMiembros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistroUsuarios.aspx.cs">
+      <DependentUpon>RegistroUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroUsuarios.aspx.designer.cs">
+      <DependentUpon>RegistroUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitarios.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Recursos\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Recursos\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Recursos\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Recursos\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Recursos\font-awesome\less\animated.less" />
+    <Content Include="Recursos\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Recursos\font-awesome\less\core.less" />
+    <Content Include="Recursos\font-awesome\less\fixed-width.less" />
+    <Content Include="Recursos\font-awesome\less\font-awesome.less" />
+    <Content Include="Recursos\font-awesome\less\icons.less" />
+    <Content Include="Recursos\font-awesome\less\larger.less" />
+    <Content Include="Recursos\font-awesome\less\list.less" />
+    <Content Include="Recursos\font-awesome\less\mixins.less" />
+    <Content Include="Recursos\font-awesome\less\path.less" />
+    <Content Include="Recursos\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Recursos\font-awesome\less\stacked.less" />
+    <Content Include="Recursos\font-awesome\less\variables.less" />
+    <Content Include="Recursos\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Recursos\font-awesome\scss\_animated.scss" />
+    <Content Include="Recursos\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Recursos\font-awesome\scss\_core.scss" />
+    <Content Include="Recursos\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Recursos\font-awesome\scss\_icons.scss" />
+    <Content Include="Recursos\font-awesome\scss\_larger.scss" />
+    <Content Include="Recursos\font-awesome\scss\_list.scss" />
+    <Content Include="Recursos\font-awesome\scss\_mixins.scss" />
+    <Content Include="Recursos\font-awesome\scss\_path.scss" />
+    <Content Include="Recursos\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Recursos\font-awesome\scss\_stacked.scss" />
+    <Content Include="Recursos\font-awesome\scss\_variables.scss" />
+    <Content Include="Recursos\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Recursos\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Recursos\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Recursos\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Recursos\less\creative.less" />
+    <Content Include="Recursos\less\mixins.less" />
+    <Content Include="Recursos\less\variables.less" />
+    <Content Include="Principal.Master" />
+    <Content Include="LogIn.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{f6dc8287-bd00-41f7-b6b4-93b8d9a4f89a}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\LogIn.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\LogIn.aspx.en.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49167</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49167/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
