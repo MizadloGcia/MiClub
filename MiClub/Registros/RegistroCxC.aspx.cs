@@ -106,6 +106,13 @@ namespace MiClub.Registros
                     MontoTextBox.Text = tm.Monto.ToString();
                 }
             }
+            else
+            {
+                Response.Write(" Debe introducir una Tipo de Multa! ");
+                TipoDropDownList.SelectedIndex = 0;
+                TipoMultaDropDownList.Visible = false;
+                TipoMultaLabel.Visible = false;
+            }
 
         }
 
@@ -113,7 +120,7 @@ namespace MiClub.Registros
         {
             Configuraciones con = new Configuraciones();
 
-                if(con.BuscarMontoCuota() == true)
+                if(con.BuscarMontoCuota(Convert.ToInt32(ClubDropDownList.SelectedValue)) == true)
                 {
                     MontoTextBox.Text = con.Monto.ToString();
                 }

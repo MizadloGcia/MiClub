@@ -8,6 +8,7 @@
     <br />
     <asp:Label ID="Label2" runat="server" Text="Fecha"></asp:Label>
     <asp:TextBox ID="FechaTextBox" runat="server" TextMode="Date"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="FechaTextBox" ErrorMessage="Debe seleccionar la fecha" ForeColor="Red">*</asp:RequiredFieldValidator>
     <br />
     
     <asp:Label ID="Label3" runat="server" Text="Club"></asp:Label>
@@ -28,6 +29,7 @@
     <asp:Label ID="Label7" runat="server" Text="Monto"></asp:Label>
     <asp:TextBox ID="MontoTextBox" runat="server" Enabled="False"></asp:TextBox>
     <br />
+    <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
     <br />
     <asp:Button ID="RegistrarButton" runat="server" Text="Registrar" OnClick="RegistrarButton_Click" />
 &nbsp;&nbsp;

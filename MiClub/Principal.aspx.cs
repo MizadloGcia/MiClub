@@ -38,5 +38,10 @@ namespace MiClub
         {
             Response.Redirect("Registros/RegistroCxC.aspx");
         }
+
+        protected void ConfButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Registros/Configuracion.aspx");
+        }
     }
 }

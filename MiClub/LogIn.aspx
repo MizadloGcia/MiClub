@@ -9,9 +9,11 @@
     <asp:TextBox ID="UsuarioTextBox" runat="server" meta:resourcekey="UsuarioTextBoxResource1"></asp:TextBox>
     <br />
     <asp:Label ID="Label3" runat="server" Text="Pass" meta:resourcekey="Label3Resource1"></asp:Label>
-    <asp:TextBox ID="PassTextBox" runat="server" meta:resourcekey="PassTextBoxResource1"></asp:TextBox>
+    <asp:TextBox ID="PassTextBox" runat="server" meta:resourcekey="PassTextBoxResource1" TextMode="Password"></asp:TextBox>
     <br />
     <asp:Button ID="IniciarButton" runat="server" Text="Iniciar Sesion" OnClick="IniciarButton_Click" style="height: 26px" meta:resourcekey="IniciarButtonResource1" />
+    &nbsp;
+    <asp:Button ID="RegistrarseButton" runat="server" OnClick="RegistrarseButton_Click" Text="Registrarse" />
     <br />
     <br />
     <asp:Button ID="EnButton" runat="server" Text="English" OnClick="EnButton_Click" />

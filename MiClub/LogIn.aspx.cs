@@ -59,5 +59,10 @@ namespace MiClub
             Session["Lang"] = "ES";
             Response.Redirect(Request.RawUrl);
         }
+
+        protected void RegistrarseButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegistroUsuarios.aspx");
+        }
     }
 }

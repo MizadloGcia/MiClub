@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 using BLL;
 
 namespace MiClub.Registros
@@ -48,15 +49,56 @@ namespace MiClub.Registros
 
         public void CargarDeudas()
         {
-            DeudaDropDownList.DataSource = CxC.Listar("IdCxC, Concat('Fecha: ', Fecha,' Monto: ',Monto) as Deuda", "IdMiembro = " + MiembroDropDownList.SelectedValue + " and IdTipoDocumento = " + TipoDropDownList.SelectedValue);
+            DeudaDropDownList.DataSource = CxC.Listar("IdCxC, Concat('Fecha: ', Fecha,' Monto: ',Monto) as Deuda", "IdMiembro = " + MiembroDropDownList.SelectedValue + " and IdTipoDocumento = " + TipoDropDownList.SelectedValue + " and Estado = 0");
             DeudaDropDownList.DataTextField = "Deuda";
             DeudaDropDownList.DataValueField = "IdCxC";
             DeudaDropDownList.DataBind();
+
+            BuscarValor();
         }
+
+        public void BuscarValor()
+        {
+            Cobros cob = new Cobros();
+            if (DeudaDropDownList.SelectedValue != "")
+            {
+                if (cob.BuscarValor(Convert.ToInt32(DeudaDropDownList.SelectedValue)) == true)
+                {
+                    MontoTextBox.Text = cob.Valor.ToString();
+                }
+            }
+        }
+
+        double Monto = 0;
 
         protected void AgregarButton_Click(object sender, EventArgs e)
         {
+            DataTable data;
 
+            if (Session["data"] == null)
+            {
+                data = new DataTable();
+
+                data.Columns.Add(new DataColumn("IdCxC"));
+                data.Columns.Add(new DataColumn("Valor"));
+            }
+            else
+            {
+                data = Session["data"] as DataTable;
+            }
+
+            DataRow row = data.NewRow();
+            row["IdCxC"] = DeudaDropDownList.SelectedValue;
+            row["Valor"] = MontoTextBox.Text;
+            data.Rows.Add(row);
+
+            Session["data"] = data;
+
+            CobrosGridView.DataSource = data;
+            CobrosGridView.DataBind();
+
+            Monto += Convert.ToDouble(MontoTextBox.Text);
+            TotalTextBox.Text = Monto.ToString();
         }
 
         protected void MiembroDropDownList_SelectedIndexChanged(object sender, EventArgs e)
@@ -68,5 +110,42 @@ namespace MiClub.Registros
         {
             CargarDeudas();
         }
+
+        protected void CobrarButton_Click(object sender, EventArgs e)
+        {
+            Cobros cob = new Cobros();
+
+            cob.IdMiembro = Convert.ToInt32(MiembroDropDownList.SelectedValue);
+            cob.Total = Convert.ToDouble(TotalTextBox.Text);
+            cob.Fecha = Convert.ToDateTime(FechaTextBox.Text);
+
+            if(Session["IdCobro"] == null)
+            {
+                if(cob.Insertar())
+                {
+                    if (cob.BuscarIdCob())
+                    {
+                        IdCobroTextBox.Text = cob.IdCobro.ToString();
+                    }
+
+                    DataTable data = Session["data"] as DataTable;
+
+                    foreach (DataRow row in data.Rows)
+                    {
+                        cob.IdCxC = int.Parse(row["IdCxC"].ToString());
+                        cob.Valor = Convert.ToDouble(row["Valor"].ToString());
+
+                        cob.InsertarDet();
+                    }
+                }
+            }
+        }
+
+        protected void DeudaDropDownList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BuscarValor();
+        }
+
+        
     }
 }

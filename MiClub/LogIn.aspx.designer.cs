@@ -67,6 +67,15 @@ namespace MiClub {
         protected global::System.Web.UI.WebControls.Button IniciarButton;
         
         /// <summary>
+        /// RegistrarseButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button RegistrarseButton;
+        
+        /// <summary>
         /// EnButton control.
         /// </summary>
         /// <remarks>

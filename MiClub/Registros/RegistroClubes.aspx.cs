@@ -32,7 +32,18 @@ namespace MiClub
             cl.IdUsuario = id;
 
             if (Session["IdClub"] == null)
-                cl.Insertar();
+                if (cl.Insertar())
+                {
+                    AsignarLabel.Visible = true;
+                    MontoLabel.Visible = true;
+                    MontoCuotaTextBox.Visible = true;
+                    GuardarMontoButton.Visible = true;
+
+                    RegistroLabel.Visible = false;
+                    NombreLabel.Visible = false;
+                    NombreTextBox.Visible = false;
+                    GuardarButton.Visible = false;
+                }
             else
             {
                 int idc = 0;
@@ -58,6 +69,20 @@ namespace MiClub
         protected void VolverButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("../Consultas/ConsultaClubs.aspx");
+        }
+
+        protected void GuardarMontoButton_Click(object sender, EventArgs e)
+        {
+            Configuraciones conf = new Configuraciones();
+
+            if(conf.BuscarIdClub() == true)
+            {
+                IdClubTextBox.Text = conf.IdClub.ToString();
+            }
+            conf.Monto = Convert.ToDouble(MontoCuotaTextBox.Text);
+            conf.IdClub = Convert.ToInt32(IdClubTextBox.Text);
+
+            conf.InsertarMontoCuota();
         }
 
     }
