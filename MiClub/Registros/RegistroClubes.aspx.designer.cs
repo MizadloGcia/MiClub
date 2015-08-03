@@ -40,6 +40,24 @@ namespace MiClub {
         protected global::System.Web.UI.WebControls.TextBox NombreTextBox;
         
         /// <summary>
+        /// NomClubRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NomClubRequiredFieldValidator;
+        
+        /// <summary>
+        /// NomClubRegularExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator NomClubRegularExpressionValidator;
+        
+        /// <summary>
         /// GuardarButton control.
         /// </summary>
         /// <remarks>
@@ -65,6 +83,15 @@ namespace MiClub {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonEliminar;
+        
+        /// <summary>
+        /// ClubValidationSummary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ClubValidationSummary;
         
         /// <summary>
         /// AsignarLabel control.
@@ -94,6 +121,24 @@ namespace MiClub {
         protected global::System.Web.UI.WebControls.TextBox MontoCuotaTextBox;
         
         /// <summary>
+        /// MontoClubRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator MontoClubRequiredFieldValidator;
+        
+        /// <summary>
+        /// MontoClubRegularExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator MontoClubRegularExpressionValidator;
+        
+        /// <summary>
         /// GuardarMontoButton control.
         /// </summary>
         /// <remarks>
@@ -101,6 +146,15 @@ namespace MiClub {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button GuardarMontoButton;
+        
+        /// <summary>
+        /// MontoCuotaValidationSummary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary MontoCuotaValidationSummary;
         
         /// <summary>
         /// IdClubTextBox control.

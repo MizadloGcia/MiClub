@@ -114,8 +114,8 @@ namespace MiClub.Registros
         protected void CobrarButton_Click(object sender, EventArgs e)
         {
             Cobros cob = new Cobros();
+            CxC cxc = new CxC();
 
-            cob.IdMiembro = Convert.ToInt32(MiembroDropDownList.SelectedValue);
             cob.Total = Convert.ToDouble(TotalTextBox.Text);
             cob.Fecha = Convert.ToDateTime(FechaTextBox.Text);
 
@@ -134,6 +134,8 @@ namespace MiClub.Registros
                     {
                         cob.IdCxC = int.Parse(row["IdCxC"].ToString());
                         cob.Valor = Convert.ToDouble(row["Valor"].ToString());
+
+                        cxc.ActualizarEstado(int.Parse(row["IdCxC"].ToString()));
 
                         cob.InsertarDet();
                     }

@@ -32,6 +32,7 @@ namespace MiClub
             cl.IdUsuario = id;
 
             if (Session["IdClub"] == null)
+            {
                 if (cl.Insertar())
                 {
                     AsignarLabel.Visible = true;
@@ -43,7 +44,24 @@ namespace MiClub
                     NombreLabel.Visible = false;
                     NombreTextBox.Visible = false;
                     GuardarButton.Visible = false;
+
+                    ClubValidationSummary.Enabled = false;
+                    ClubValidationSummary.Visible = false;
+                    NomClubRegularExpressionValidator.Enabled = false;
+                    NomClubRegularExpressionValidator.Visible = false;
+                    NomClubRequiredFieldValidator.Enabled = false;
+                    NomClubRequiredFieldValidator.Enabled = false;
+
+                    MontoCuotaValidationSummary.Enabled = true;
+                    MontoCuotaValidationSummary.Visible = true;
+                    MontoClubRequiredFieldValidator.Enabled = true;
+                    MontoClubRequiredFieldValidator.Visible = true;
+                    MontoClubRegularExpressionValidator.Enabled = true;
+                    MontoClubRegularExpressionValidator.Visible = true;
+
+                    ButtonEliminar.Visible = false;
                 }
+            }
             else
             {
                 int idc = 0;
@@ -83,6 +101,9 @@ namespace MiClub
             conf.IdClub = Convert.ToInt32(IdClubTextBox.Text);
 
             conf.InsertarMontoCuota();
+
+            MontoCuotaTextBox.Text = "";
+            Response.Redirect("../Principal.aspx");
         }
 
     }

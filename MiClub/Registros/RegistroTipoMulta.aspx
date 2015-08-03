@@ -11,6 +11,7 @@
     <asp:Label ID="Label5" runat="server" Text="Monto"></asp:Label>
     <asp:TextBox ID="MontoMultaTextBox" runat="server"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="MontoMultaTextBox" ErrorMessage="Debe introducir el Monto de la multa" ForeColor="Red">*</asp:RequiredFieldValidator>
+    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="El Monto no es correcto" ForeColor="Red" ValidationExpression="^[0-9]*" ControlToValidate="MontoMultaTextBox">*</asp:RegularExpressionValidator>
     <br />
     <asp:Label ID="Label7" runat="server" Text="Club: "></asp:Label>
     <asp:DropDownList ID="ClubMultaDropDownList" runat="server"></asp:DropDownList>

@@ -8,6 +8,7 @@
     <asp:Label ID="Label3" runat="server" Text="Nuevo monto: "></asp:Label>
     <asp:TextBox ID="MontoTextBox" runat="server"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="MontoTextBox" ErrorMessage="Debe introducir el Monto de la cuota" ForeColor="Red">*</asp:RequiredFieldValidator>
+     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="MontoTextBox" ErrorMessage="El Monto no es correcto" ForeColor="Red" ValidationExpression="^[0-9]*">*</asp:RegularExpressionValidator>
 &nbsp;<asp:Button ID="GuardarButton" runat="server" Text="Guardar" OnClick="GuardarButton_Click" />
     <br />
     <asp:Label ID="Label8" runat="server" Text="Club: "></asp:Label>
