@@ -141,6 +141,8 @@ namespace MiClub.Registros
             BuscarMonto();
         }
 
+        
+
 
     }
 }

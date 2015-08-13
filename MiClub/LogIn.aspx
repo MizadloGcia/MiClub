@@ -2,20 +2,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Label ID="Label1" runat="server" Text="Inicio de Sesion" meta:resourcekey="Label1Resource1"></asp:Label>
-    <br />
-    <br />
-    <asp:Label ID="Label2" runat="server" Text="Usuario" meta:resourcekey="Label2Resource1"></asp:Label>
-    <asp:TextBox ID="UsuarioTextBox" runat="server" meta:resourcekey="UsuarioTextBoxResource1"></asp:TextBox>
-    <br />
-    <asp:Label ID="Label3" runat="server" Text="Pass" meta:resourcekey="Label3Resource1"></asp:Label>
-    <asp:TextBox ID="PassTextBox" runat="server" meta:resourcekey="PassTextBoxResource1" TextMode="Password"></asp:TextBox>
-    <br />
-    <asp:Button ID="IniciarButton" runat="server" Text="Iniciar Sesion" OnClick="IniciarButton_Click" style="height: 26px" meta:resourcekey="IniciarButtonResource1" />
-    &nbsp;
-    <asp:Button ID="RegistrarseButton" runat="server" OnClick="RegistrarseButton_Click" Text="Registrarse" />
-    <br />
-    <br />
-    <asp:Button ID="EnButton" runat="server" Text="English" OnClick="EnButton_Click" />
-    <asp:Button ID="EsButton2" runat="server" Text="Español" OnClick="EsButton2_Click" />
+
+    <img src="Recursos/LogImg.png" style="margin-left:480px"/>
+    <div class="form-group" style="border:1px solid black; margin-left:475px; width:325px; margin-top:10px">
+    <div class="form-group" style="margin-top:20px; margin-left:15px">
+    <label for="exampleInputEmail1">Usuario</label>&nbsp;&nbsp;&nbsp;
+    <asp:TextBox ID="UsuarioTextBox" runat="server" meta:resourcekey="UsuarioTextBoxResource1" Width="182px"></asp:TextBox>
+  </div>
+  <div class="form-group" style="margin-left:15px">
+    <label for="exampleInputPassword1">Password</label>
+    <asp:TextBox ID="PassTextBox" runat="server" meta:resourcekey="PassTextBoxResource1" TextMode="Password" Width="182px"></asp:TextBox>
+  </div>
+  <div style="margin-bottom:13px; width:304px; margin-left:10px">
+  <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="Iniciar Sesion" OnClick="IniciarButton_Click" meta:resourcekey="IniciarButtonResource1" Height="36px" />
+    
+    <asp:Button ID="Button2" runat="server" OnClick="RegistrarseButton_Click" class="btn btn-primary" Text="Registrarse" Width="148px" />
+    </div>
+    </div>
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
+
 </asp:Content>

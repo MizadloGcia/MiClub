@@ -13,11 +13,9 @@
         <asp:RequiredFieldValidator ID="NomClubRequiredFieldValidator" runat="server" ControlToValidate="NombreTextBox" ErrorMessage="Debe introducie el nombre del Club" ForeColor="Red">*</asp:RequiredFieldValidator>
         <asp:RegularExpressionValidator ID="NomClubRegularExpressionValidator" runat="server" ControlToValidate="NombreTextBox" ErrorMessage="El nombre del Club solo puede contener letras (A-Z)" ForeColor="Red" ValidationExpression="^[a-zA-Z ]*$">*</asp:RegularExpressionValidator>
     &nbsp;
-        <asp:Button ID="GuardarButton" runat="server" OnClick="Button1_Click" Text="Guardar" />
-    &nbsp;<asp:Button ID="VolverButton" runat="server" Text="Volver a Clubes" OnClick="VolverButton_Click" Visible="False" />
-    </p>
-    <p style="margin-left: 160px">
-        <asp:Button ID="ButtonEliminar" runat="server" Text="Eliminar" Visible="False" />
+        <asp:Button ID="LimpiarButton" runat="server" Text="Limpiar" OnClick="LimpiarButton_Click" CausesValidation="False" />
+&nbsp;<asp:Button ID="GuardarButton" runat="server" OnClick="Button1_Click" Text="Guardar" />
+    &nbsp;<asp:Button ID="ButtonEliminar" runat="server" Text="Eliminar" OnClick="ButtonEliminar_Click" CausesValidation="False" />
     </p>
     <asp:ValidationSummary ID="ClubValidationSummary" runat="server" ForeColor="Red" style="margin-left: 162px" />
     <p>

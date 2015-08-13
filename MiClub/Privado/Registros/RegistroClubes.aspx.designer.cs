@@ -7,162 +7,162 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MiClub.Registros {
+namespace MiClub {
     
     
-    public partial class RegistroCxC {
+    public partial class RegistroClubes {
         
         /// <summary>
-        /// Label1 control.
+        /// RegistroLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label RegistroLabel;
         
         /// <summary>
-        /// Label2 control.
+        /// NombreLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label NombreLabel;
         
         /// <summary>
-        /// FechaTextBox control.
+        /// NombreTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FechaTextBox;
+        protected global::System.Web.UI.WebControls.TextBox NombreTextBox;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// NomClubRequiredFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NomClubRequiredFieldValidator;
         
         /// <summary>
-        /// Label3 control.
+        /// NomClubRegularExpressionValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator NomClubRegularExpressionValidator;
         
         /// <summary>
-        /// ClubDropDownList control.
+        /// LimpiarButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ClubDropDownList;
+        protected global::System.Web.UI.WebControls.Button LimpiarButton;
         
         /// <summary>
-        /// Label5 control.
+        /// GuardarButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Button GuardarButton;
         
         /// <summary>
-        /// TipoDropDownList control.
+        /// ButtonEliminar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList TipoDropDownList;
+        protected global::System.Web.UI.WebControls.Button ButtonEliminar;
         
         /// <summary>
-        /// TipoMultaLabel control.
+        /// ClubValidationSummary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TipoMultaLabel;
+        protected global::System.Web.UI.WebControls.ValidationSummary ClubValidationSummary;
         
         /// <summary>
-        /// TipoMultaDropDownList control.
+        /// AsignarLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList TipoMultaDropDownList;
+        protected global::System.Web.UI.WebControls.Label AsignarLabel;
         
         /// <summary>
-        /// Label4 control.
+        /// MontoLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label MontoLabel;
         
         /// <summary>
-        /// MiembroDropDownList control.
+        /// MontoCuotaTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList MiembroDropDownList;
+        protected global::System.Web.UI.WebControls.TextBox MontoCuotaTextBox;
         
         /// <summary>
-        /// Label7 control.
+        /// MontoClubRequiredFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator MontoClubRequiredFieldValidator;
         
         /// <summary>
-        /// MontoTextBox control.
+        /// MontoClubRegularExpressionValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MontoTextBox;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator MontoClubRegularExpressionValidator;
         
         /// <summary>
-        /// ValidationSummary1 control.
+        /// GuardarMontoButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+        protected global::System.Web.UI.WebControls.Button GuardarMontoButton;
         
         /// <summary>
-        /// RegistrarButton control.
+        /// MontoCuotaValidationSummary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RegistrarButton;
+        protected global::System.Web.UI.WebControls.ValidationSummary MontoCuotaValidationSummary;
         
         /// <summary>
-        /// VerButton control.
+        /// IdClubTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button VerButton;
+        protected global::System.Web.UI.WebControls.TextBox IdClubTextBox;
     }
 }

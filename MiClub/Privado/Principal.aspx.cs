@@ -16,7 +16,8 @@ namespace MiClub
 
         protected void InicioButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Principal.aspx");
+            if (!ClientScript.IsClientScriptBlockRegistered("script"))
+                ClientScript.RegisterStartupScript(this.GetType(), "script", "alert('El IdCategoria No Puede Estar Vacio Para Eliminar')", true);
         }
 
         protected void ClubsButton_Click(object sender, EventArgs e)

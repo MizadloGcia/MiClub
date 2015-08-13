@@ -5,8 +5,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+          <img src="/Recursos/pers.png" style ="width:50px; height:50px; margin-top:-13px"/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/Privado/Principal.aspx">Inicio <span class="sr-only">(current)</span></a></li>
+        <li><a href="/Privado/Consultas/ConsultaClubs.aspx">Mis Clubs</a></li>
+        <li><a href="/Privado/Consultas/ConsultaMiembros.aspx">Miembros</a></li>
+        <li><a href="/Privado/Consultas/ConsultaCxC.aspx">Cuentas por Cobrar</a></li>
+        <li><a href="/Privado/Registro/RegistroCobros.aspx">Cobros</a></li>
+        <li><a href="/Privado/Registros/Configuracion.aspx">Configuracion</a></li>
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">

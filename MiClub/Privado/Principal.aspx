@@ -14,4 +14,6 @@
         <asp:Button ID="ConfButton" runat="server" Text="Configuracion" OnClick="ConfButton_Click" />
     </p>
 
+   
 </asp:Content>
+

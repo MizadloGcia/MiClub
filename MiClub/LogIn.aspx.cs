@@ -19,15 +19,15 @@ namespace MiClub
         protected void IniciarButton_Click(object sender, EventArgs e)
         {
             Usuarios us = new Usuarios();
-            if(us.BuscarId(UsuarioTextBox.Text, PassTextBox.Text))
+            if (us.BuscarId(UsuarioTextBox.Text, PassTextBox.Text))
             {
                 FormsAuthentication.RedirectFromLoginPage(UsuarioTextBox.Text, true);
 
-                Session["IdUsuario"]=us.IdUsuario;
-                
-                
+                Session["IdUsuario"] = us.IdUsuario;
+
+
                 //cl.IdUsuario = us.IdUsuario;
-                Response.Redirect("Principal.aspx");
+                Response.Redirect("/Privado/Principal.aspx");
             }
             else
             {
@@ -35,34 +35,9 @@ namespace MiClub
             }
         }
 
-        protected override void InitializeCulture()
-        {
-            if(Session["Lang"] != null)
-            {
-                this.UICulture = Session["Lang"].ToString();
-            }
-            else
-            {
-                Session["Lang"] = this.UICulture.Substring(0, 2);
-            }
-            base.InitializeCulture();
-        }
-
-        protected void EnButton_Click(object sender, EventArgs e)
-        {
-            Session["Lang"] = "EN";
-            Response.Redirect(Request.RawUrl);
-        }
-
-        protected void EsButton2_Click(object sender, EventArgs e)
-        {
-            Session["Lang"] = "ES";
-            Response.Redirect(Request.RawUrl);
-        }
-
         protected void RegistrarseButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("RegistroUsuarios.aspx");
+            Response.Redirect("/RegistroUsuarios.aspx");
         }
     }
 }

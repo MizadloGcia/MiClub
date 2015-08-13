@@ -18,5 +18,6 @@
     <asp:ValidationSummary ID="ValidationSummary2" runat="server" ForeColor="Red" />
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="RegistrarButton" runat="server" Text="Registrar" OnClick="RegistrarButton_Click" />
+    <asp:Button ID="LimpiarButton" runat="server" Text="Limpiar" OnClick="LimpiarButton_Click" />
+&nbsp;<asp:Button ID="RegistrarButton" runat="server" Text="Registrar" OnClick="RegistrarButton_Click" />
 </asp:Content>

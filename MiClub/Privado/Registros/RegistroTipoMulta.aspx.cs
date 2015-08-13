@@ -33,5 +33,16 @@ namespace MiClub.Registros
 
             tm.Insertar();
         }
+
+        public void Limpiar()
+        {
+            MontoMultaTextBox.Text = "";
+            DescripcionTextBox.Text = "";
+        }
+
+        protected void LimpiarButton_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
     }
 }

@@ -33,5 +33,4 @@
     <br />
     <asp:Button ID="RegistrarButton" runat="server" Text="Registrar" OnClick="RegistrarButton_Click" />
 &nbsp;&nbsp;
-    <asp:Button ID="VerButton" runat="server" Text="Ver Cuentas" />
-</asp:Content>
+    </asp:Content>

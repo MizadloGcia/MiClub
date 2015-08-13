@@ -32,6 +32,26 @@ namespace MiClub.Registros
             user.Genero = int.Parse(GeneroDropDownList.SelectedValue);
 
             user.Insertar();
+            Limpiar();
+        }
+
+        public void Limpiar()
+        {
+            UsuarioTextBox.Text = "";
+            PassTextBox.Text = "";
+            NombresTextBox.Text = "";
+            ApellidosTextBox.Text = "";
+            FechaNacTextBox.Text = "";
+            DireccionTextBox.Text = "";
+            DireccionTextBox.Text = "";
+            EmailTextBox.Text = "";
+            TelefonoTextBox.Text = "";
+            CelularTextBox.Text = "";
+        }
+
+        protected void LimpiarButton_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

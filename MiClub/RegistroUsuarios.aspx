@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="RegistroUsuarios.aspx.cs" Inherits="MiClub.Registros.RegistroUsuarios" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LogIn.Master" AutoEventWireup="true" CodeBehind="RegistroUsuarios.aspx.cs" Inherits="MiClub.Registros.RegistroUsuarios" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -59,7 +59,8 @@
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
-        <asp:Button ID="GuardarButton" runat="server" Text="Registrarse" OnClick="GuardarButton_Click" />
+        <asp:Button ID="LimpiarButton" runat="server" Text="Limpiar" OnClick="LimpiarButton_Click" />
+&nbsp;<asp:Button ID="GuardarButton" runat="server" Text="Registrarse" OnClick="GuardarButton_Click" />
     &nbsp;
     </div>
 </asp:Content>

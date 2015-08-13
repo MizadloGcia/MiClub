@@ -30,7 +30,20 @@ namespace MiClub.Registros
             conf.Monto = Convert.ToDouble(MontoTextBox.Text);
             conf.IdClub = Convert.ToInt32(ClubCuotaDropDownList.SelectedValue);
 
-            conf.ModificarMontoCuota();
+            if (conf.ModificarMontoCuota())
+            {
+                Limpiar();
+            }
+        }
+
+        public void Limpiar()
+        {
+            MontoTextBox.Text = "";
+        }
+
+        protected void LimpiarButton_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

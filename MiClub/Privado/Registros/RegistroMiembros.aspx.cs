@@ -102,5 +102,10 @@ namespace MiClub
             CedulaTextBox.Text = "";
 
         }
+
+        protected void LimpiarButton_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
     }
 }
