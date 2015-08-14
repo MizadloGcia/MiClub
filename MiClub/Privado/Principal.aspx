@@ -3,16 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-
-    <p>
-        <asp:Button ID="InicioButton" runat="server" Text="Inicio" OnClick="InicioButton_Click" />
-        <asp:Button ID="ClubsButton" runat="server" Text="Mis Clubs" OnClick="ClubsButton_Click" />
-        <asp:Button ID="MiembrosButton" runat="server" Text="Miembros" OnClick="MiembrosButton_Click" />
-        <asp:Button ID="CxCButton" runat="server" Text="CxC" OnClick="CxCButton_Click" />
-        <asp:Button ID="CobrosButton" runat="server" Text="Cobros" OnClick="CobrosButton_Click" />
-        <asp:Button ID="ConfButton" runat="server" Text="Configuracion" OnClick="ConfButton_Click" />
-    </p>
+    <img src="../Recursos/LogImg.png" style="margin-left:500px; margin-top:70px"/>
 
    
 </asp:Content>

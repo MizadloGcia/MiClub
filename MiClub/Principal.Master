@@ -29,9 +29,8 @@
         <li><a href="/Privado/Consultas/ConsultaClubs.aspx">Mis Clubs</a></li>
         <li><a href="/Privado/Consultas/ConsultaMiembros.aspx">Miembros</a></li>
         <li><a href="/Privado/Consultas/ConsultaCxC.aspx">Cuentas por Cobrar</a></li>
-        <li><a href="/Privado/Registro/RegistroCobros.aspx">Cobros</a></li>
+        <li><a href="/Privado/Consultas/ConsultaCobros.aspx">Cobros</a></li>
         <li><a href="/Privado/Registros/Configuracion.aspx">Configuracion</a></li>
-       
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

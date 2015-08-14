@@ -97,8 +97,8 @@ namespace MiClub.Registros
             CobrosGridView.DataSource = data;
             CobrosGridView.DataBind();
 
-            Monto += Convert.ToDouble(MontoTextBox.Text);
-            TotalTextBox.Text = Monto.ToString();
+            //Monto += Convert.ToDouble(MontoTextBox.Text);
+            //TotalTextBox.Text = Monto.ToString();
         }
 
         protected void MiembroDropDownList_SelectedIndexChanged(object sender, EventArgs e)

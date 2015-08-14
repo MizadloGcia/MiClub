@@ -193,15 +193,6 @@ namespace MiClub.Registros {
         protected global::System.Web.UI.WebControls.GridView CobrosGridView;
         
         /// <summary>
-        /// TotalTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TotalTextBox;
-        
-        /// <summary>
         /// CobrarButton control.
         /// </summary>
         /// <remarks>
@@ -218,5 +209,14 @@ namespace MiClub.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label8;
+        
+        /// <summary>
+        /// TotalTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TotalTextBox;
     }
 }

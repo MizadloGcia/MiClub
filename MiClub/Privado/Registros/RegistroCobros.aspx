@@ -43,7 +43,7 @@
             <asp:GridView ID="CobrosGridView" runat="server">
             </asp:GridView>
             <br />
-            <asp:TextBox ID="TotalTextBox" runat="server"></asp:TextBox>
+            
 
         </ContentTemplate>
     </asp:UpdatePanel>
@@ -51,5 +51,5 @@
         <asp:Button ID="CobrarButton" runat="server" Text="Cobrar" OnClick="CobrarButton_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label8" runat="server" Text="Total: "></asp:Label>
-
+            <asp:TextBox ID="TotalTextBox" runat="server"></asp:TextBox>
 </asp:Content>
