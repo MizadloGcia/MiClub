@@ -31,8 +31,11 @@ namespace MiClub.Registros
             user.Celular = CelularTextBox.Text;
             user.Genero = int.Parse(GeneroDropDownList.SelectedValue);
 
-            user.Insertar();
-            Limpiar();
+            if (user.Insertar())
+            {
+                Limpiar();
+                Response.Redirect("default.aspx");
+            }
         }
 
         public void Limpiar()
@@ -52,6 +55,11 @@ namespace MiClub.Registros
         protected void LimpiarButton_Click(object sender, EventArgs e)
         {
             Limpiar();
+        }
+
+        protected void VolverLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("default.aspx");
         }
     }
 }

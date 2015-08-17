@@ -62,7 +62,7 @@
     <Content Include="bootstrap-3.3.5-dist\js\bootstrap.js" />
     <Content Include="bootstrap-3.3.5-dist\js\bootstrap.min.js" />
     <Content Include="bootstrap-3.3.5-dist\js\npm.js" />
-    <Content Include="LogIn.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="Privado\Consultas\ConsultaClubs.aspx" />
     <Content Include="Privado\Consultas\ConsultaCobros.aspx" />
     <Content Include="Privado\Consultas\ConsultaCxC.aspx" />
@@ -109,12 +109,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LogIn.aspx.cs">
-      <DependentUpon>LogIn.aspx</DependentUpon>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LogIn.aspx.designer.cs">
-      <DependentUpon>LogIn.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Privado\Consultas\ConsultaClubs.aspx.cs">
       <DependentUpon>ConsultaClubs.aspx</DependentUpon>

@@ -59,8 +59,9 @@
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
-        <asp:Button ID="LimpiarButton" runat="server" Text="Limpiar" OnClick="LimpiarButton_Click" />
+        <asp:Button ID="LimpiarButton" runat="server" Text="Limpiar" OnClick="LimpiarButton_Click" CausesValidation="False" />
 &nbsp;<asp:Button ID="GuardarButton" runat="server" Text="Registrarse" OnClick="GuardarButton_Click" />
+        <asp:LinkButton ID="VolverLinkButton" runat="server" CausesValidation="False" OnClick="VolverLinkButton_Click">Volver al Inicio</asp:LinkButton>
     &nbsp;
     </div>
 </asp:Content>

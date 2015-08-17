@@ -10,7 +10,7 @@ namespace DAL
 {
     public class Conexion
     {
-        SqlConnection con = new SqlConnection(@"Data Source=MIZADLO-PC\MIZADLO;Initial Catalog=MiClubDB;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+        SqlConnection con = new SqlConnection(@"workstation id=MiClubDB.mssql.somee.com;packet size=4096;user id=MizadloGcia;pwd=miverde3;data source=MiClubDB.mssql.somee.com;persist security info=False;initial catalog=MiClubDB");
         /// <summary>
         /// para ejecutar todos los codigos
         /// </summary>
