@@ -16,3 +16,827 @@
 -Footer:
 
 *Fix Opening Hours.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/admin.css"></style>
+    <link rel="stylesheet" href="styles/app.css"></style>
+    <link rel="stylesheet" href="styles/editor-style.css"></style>
+</head>
+<body>
+
+    <style>
+        .city{
+            display: none;
+        }
+
+        #Providence{
+            display: block;
+        }
+    </style>
+        <script>
+            function OnSelectionChange()
+            {
+                var city = document.getElementById("mySelect").value;
+                console.log(city);
+                document.getElementById("Providence").style.display = "none";
+                document.getElementById("Cranston").style.display = "none";
+                document.getElementById("Lincoln").style.display = "none";
+                document.getElementById("Johnston").style.display = "none";
+                document.getElementById("Warwick").style.display = "none";
+                document.getElementById("WestWarwick").style.display = "none";
+                document.getElementById("Coventry").style.display = "none";
+                document.getElementById("EastProvidence").style.display = "none";
+                document.getElementById("NorthProvidence").style.display = "none";
+                document.getElementById("Pawtucket").style.display = "none";
+                document.getElementById("CentralFalls").style.display = "none";
+                document.getElementById("Cumberland").style.display = "none";
+                document.getElementById("CollegeHills").style.display = "none";
+                document.getElementById("FoxPoint").style.display = "none";
+                document.getElementById("Woonsoket").style.display = "none";
+                
+                if(city == "providence"){
+                    document.getElementById("Providence").style.display = "block";
+                }
+                else if(city == "cranston"){
+                    document.getElementById("Cranston").style.display = "block";
+                }
+                else if(city == "lincoln"){
+                    document.getElementById("Lincoln").style.display = "block";
+                }
+                else if(city == "johnston"){
+                    document.getElementById("Johnston").style.display = "block";
+                }
+                else if(city == "warwick"){
+                    document.getElementById("Warwick").style.display = "block";
+                }
+                else if(city == "westwarwick"){
+                    document.getElementById("WestWarwick").style.display = "block";
+                }
+                else if(city == "coventry"){
+                    document.getElementById("Coventry").style.display = "block";
+                }
+                else if(city == "eastprovidence"){
+                    document.getElementById("EastProvidence").style.display = "block";
+                }
+                else if(city == "northprovidence"){
+                    document.getElementById("NorthProvidence").style.display = "block";
+                }
+                else if(city == "pawtucket"){
+                    document.getElementById("Pawtucket").style.display = "block";
+                }
+                else if(city == "centralfalls"){
+                    document.getElementById("CentralFalls").style.display = "block";
+                }
+                else if(city == "cumberland"){
+                    document.getElementById("Cumberland").style.display = "block";
+                }
+                else if(city == "collegehills"){
+                    document.getElementById("CollegeHills").style.display = "block";
+                }
+                else if(city == "foxpoint"){
+                    document.getElementById("FoxPoint").style.display = "block";
+                }
+                else if(city == "woonsoket"){
+                    document.getElementById("Woonsoket").style.display = "block";
+                }
+
+                //alert("OK IT WORKS");
+            }
+        </script>
+                
+                <section>
+                 <select id="mySelect" onchange="OnSelectionChange()">
+                  <option value='providence'>Providence</option>
+                  <option value='cranston'>Cranston</option>
+                  <option value='lincoln'>Lincoln</option>
+                  <option value='johnston'>Johnston</option>
+                  <option value='warwick'>Warwick</option>
+                  <option value='westwarwick'>West Warwick</option>
+                  <option value='coventry'>Coventry</option>
+                  <option value='eastprovidence'>East Providence</option>
+                  <option value='northprovidence'>North Providence</option>
+                  <option value='pawtucket'>Pawtucket</option>
+                  <option value='centralfalls'>Central Falls</option>
+                  <option value='woonsoket'>Woonsoket</option>
+                  <option value='cumberland'>Cumberland</option>
+                  <option value='collegehills'>College Hills</option>
+                  <option value='foxpoint'>Fox Point</option>
+                 </select>
+                </section>
+    
+    <div class="price-table__list row city" id="Cranston">
+        <div class="col-md-6 col-md-push-3">
+            <div class="price-table__item price-table__item_best">
+    
+                <div class="price-table__value">Cranston</div>
+
+                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                    <tr>
+                        <th style ="text-align:left;">Individual classes (per hour)</th>
+                        <td style ="text-align:right;">$45.00</td>
+                    </tr>
+                    <tr>
+                        <th style ="text-align:left;">2 hours of practice</th>
+                        <td style ="text-align:right;">$80.00</td>
+                    </tr>
+                </table>
+                <h3 class="price-table__name">Packages</h3>
+                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                    <tr>
+                        <th style ="text-align:left;">6 hours of practice</th>
+                        <td style ="text-align:right;">$325.00</td>
+                    </tr>
+                    <tr>
+                        <th style ="text-align:left;">10 hours of practice</th>
+                        <td style ="text-align:right;">$465.00</td>
+                    </tr>
+                    <tr>
+                        <th style ="text-align:left;">15 hours of practice</th>
+                        <td style ="text-align:right;">$640.00</td>
+                    </tr>
+                </table>
+                <br>
+                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                    <tr>
+                        <th style ="text-align:left;">Individual rent for road test</th>
+                        <td style ="text-align:right;">$80.00</td>
+                    </tr>
+                </table>
+
+                <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                    <span class="btn__text">send request</span>
+                    <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="price-table__list row city" id="Providence">
+            <div class="col-md-6 col-md-push-3">
+                <div class="price-table__item price-table__item_best">
+        
+                    <div class="price-table__value">Providence</div>
+    
+                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                        <tr>
+                            <th style ="text-align:left;">Individual classes (per hour)</th>
+                            <td style ="text-align:right;">$40.00</td>
+                        </tr>
+                        <tr>
+                            <th style ="text-align:left;">2 hours of practice</th>
+                            <td style ="text-align:right;">$70.00</td>
+                        </tr>
+                    </table>
+                    <h3 class="price-table__name">Packages</h3>
+                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                        <tr>
+                            <th style ="text-align:left;">6 hours of practice</th>
+                            <td style ="text-align:right;">$250.00</td>
+                        </tr>
+                        <tr>
+                            <th style ="text-align:left;">10 hours of practice</th>
+                            <td style ="text-align:right;">$375.00</td>
+                        </tr>
+                        <tr>
+                            <th style ="text-align:left;">15 hours of practice</th>
+                            <td style ="text-align:right;">$530.00</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                        <tr>
+                            <th style ="text-align:left;">Individual rent for road test</th>
+                            <td style ="text-align:right;">$60.00</td>
+                        </tr>
+                    </table>
+    
+                    <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                        <span class="btn__text">send request</span>
+                        <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="price-table__list row city" id="Lincoln">
+                <div class="col-md-6 col-md-push-3">
+                    <div class="price-table__item price-table__item_best">
+            
+                        <div class="price-table__value">Lincoln</div>
+        
+                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                            <tr>
+                                <th style ="text-align:left;">Individual classes (per hour)</th>
+                                <td style ="text-align:right;">$50.00</td>
+                            </tr>
+                            <tr>
+                                <th style ="text-align:left;">2 hours of practice</th>
+                                <td style ="text-align:right;">$90.00</td>
+                            </tr>
+                        </table>
+                        <h3 class="price-table__name">Packages</h3>
+                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                            <tr>
+                                <th style ="text-align:left;">6 hours of practice</th>
+                                <td style ="text-align:right;">$350.00</td>
+                            </tr>
+                            <tr>
+                                <th style ="text-align:left;">10 hours of practice</th>
+                                <td style ="text-align:right;">$525.00</td>
+                            </tr>
+                            <tr>
+                                <th style ="text-align:left;">15 hours of practice</th>
+                                <td style ="text-align:right;">$730.00</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;"
+                            <tr>
+                                <th style ="text-align:left;">Individual rent for road test</th>
+                                <td style ="text-align:right;">$85.00</td>
+                            </tr>
+                        </table>
+        
+                        <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                            <span class="btn__text">send request</span>
+                            <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-table__list row city" id="Johnston">
+                    <div class="col-md-6 col-md-push-3">
+                        <div class="price-table__item price-table__item_best">
+                
+                            <div class="price-table__value">Johnston</div>
+            
+                            <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                <tr>
+                                    <th style ="text-align:left;">Individual classes (per hour)</th>
+                                    <td style ="text-align:right;">$50.00</td>
+                                </tr>
+                                <tr>
+                                    <th style ="text-align:left;">2 hours of practice</th>
+                                    <td style ="text-align:right;">$90.00</td>
+                                </tr>
+                            </table>
+                            <h3 class="price-table__name">Packages</h3>
+                            <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                <tr>
+                                    <th style ="text-align:left;">6 hours of practice</th>
+                                    <td style ="text-align:right;">$350.00</td>
+                                </tr>
+                                <tr>
+                                    <th style ="text-align:left;">10 hours of practice</th>
+                                    <td style ="text-align:right;">$525.00</td>
+                                </tr>
+                                <tr>
+                                    <th style ="text-align:left;">15 hours of practice</th>
+                                    <td style ="text-align:right;">$730.00</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                <tr>
+                                    <th style ="text-align:left;">Individual rent for road test</th>
+                                    <td style ="text-align:right;">$85.00</td>
+                                </tr>
+                            </table>
+            
+                            <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                <span class="btn__text">send request</span>
+                                <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table__list row city" id="Warwick">
+                        <div class="col-md-6 col-md-push-3">
+                            <div class="price-table__item price-table__item_best">
+                    
+                                <div class="price-table__value">Warwick</div>
+                
+                                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                    <tr>
+                                        <th style ="text-align:left;">Individual classes (per hour)</th>
+                                        <td style ="text-align:right;">$55.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th style ="text-align:left;">2 hours of practice</th>
+                                        <td style ="text-align:right;">$100.00</td>
+                                    </tr>
+                                </table>
+                                <h3 class="price-table__name">Packages</h3>
+                                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                    <tr>
+                                        <th style ="text-align:left;">6 hours of practice</th>
+                                        <td style ="text-align:right;">$395.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th style ="text-align:left;">10 hours of practice</th>
+                                        <td style ="text-align:right;">$575.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th style ="text-align:left;">15 hours of practice</th>
+                                        <td style ="text-align:right;">$795.00</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                    <tr>
+                                        <th style ="text-align:left;">Individual rent for road test</th>
+                                        <td style ="text-align:right;">$85.00</td>
+                                    </tr>
+                                </table>
+                
+                                <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                    <span class="btn__text">send request</span>
+                                    <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="price-table__list row city" id="WestWarwick">
+                            <div class="col-md-6 col-md-push-3">
+                                <div class="price-table__item price-table__item_best">
+                        
+                                    <div class="price-table__value">West Warwick</div>
+                    
+                                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                        <tr>
+                                            <th style ="text-align:left;">Individual classes (per hour)</th>
+                                            <td style ="text-align:right;">$55.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th style ="text-align:left;">2 hours of practice</th>
+                                            <td style ="text-align:right;">$100.00</td>
+                                        </tr>
+                                    </table>
+                                    <h3 class="price-table__name">Packages</h3>
+                                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;"
+                                        <tr>
+                                            <th style ="text-align:left;">6 hours of practice</th>
+                                            <td style ="text-align:right;">$395.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th style ="text-align:left;">10 hours of practice</th>
+                                            <td style ="text-align:right;">$575.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th style ="text-align:left;">15 hours of practice</th>
+                                            <td style ="text-align:right;">$795.00</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                        <tr>
+                                            <th style ="text-align:left;">Individual rent for road test</th>
+                                            <td style ="text-align:right;">$85.00</td>
+                                        </tr>
+                                    </table>
+                    
+                                    <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                        <span class="btn__text">send request</span>
+                                        <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-table__list row city" id="Coventry">
+                                <div class="col-md-6 col-md-push-3">
+                                    <div class="price-table__item price-table__item_best">
+                            
+                                        <div class="price-table__value">Coventry</div>
+                        
+                                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                            <tr>
+                                                <th style ="text-align:left;">Individual classes (per hour)</th>
+                                                <td style ="text-align:right;">$55.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th style ="text-align:left;">2 hours of practice</th>
+                                                <td style ="text-align:right;">$100.00</td>
+                                            </tr>
+                                        </table>
+                                        <h3 class="price-table__name">Packages</h3>
+                                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                            <tr>
+                                                <th style ="text-align:left;">6 hours of practice</th>
+                                                <td style ="text-align:right;">$395.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th style ="text-align:left;">10 hours of practice</th>
+                                                <td style ="text-align:right;">$575.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th style ="text-align:left;">15 hours of practice</th>
+                                                <td style ="text-align:right;">$795.00</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                            <tr>
+                                                <th style ="text-align:left;">Individual rent for road test</th>
+                                                <td style ="text-align:right;">$85.00</td>
+                                            </tr>
+                                        </table>
+                        
+                                        <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                            <span class="btn__text">send request</span>
+                                            <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="price-table__list row city" id="EastProvidence">
+                                    <div class="col-md-6 col-md-push-3">
+                                        <div class="price-table__item price-table__item_best">
+                                
+                                            <div class="price-table__value">East Providence</div>
+                            
+                                            <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                <tr>
+                                                    <th style ="text-align:left;">Individual classes (per hour)</th>
+                                                    <td style ="text-align:right;">$50.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style ="text-align:left;">2 hours of practice</th>
+                                                    <td style ="text-align:right;">$90.00</td>
+                                                </tr>
+                                            </table>
+                                            <h3 class="price-table__name">Packages</h3>
+                                            <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                <tr>
+                                                    <th style ="text-align:left;">6 hours of practice</th>
+                                                    <td style ="text-align:right;">$350.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style ="text-align:left;">10 hours of practice</th>
+                                                    <td style ="text-align:right;">$525.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style ="text-align:left;">15 hours of practice</th>
+                                                    <td style ="text-align:right;">$730.00</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                <tr>
+                                                    <th style ="text-align:left;">Individual rent for road test</th>
+                                                    <td style ="text-align:right;">$85.00</td>
+                                                </tr>
+                                            </table>
+                            
+                                            <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                                <span class="btn__text">send request</span>
+                                                <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="price-table__list row city" id="NorthProvidence">
+                                        <div class="col-md-6 col-md-push-3">
+                                            <div class="price-table__item price-table__item_best">
+                                    
+                                                <div class="price-table__value">North Providence</div>
+                                
+                                                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                    <tr>
+                                                        <th style ="text-align:left;">Individual classes (per hour)</th>
+                                                        <td style ="text-align:right;">$50.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style ="text-align:left;">2 hours of practice</th>
+                                                        <td style ="text-align:right;">$90.00</td>
+                                                    </tr>
+                                                </table>
+                                                <h3 class="price-table__name">Packages</h3>
+                                                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                    <tr>
+                                                        <th style ="text-align:left;">6 hours of practice</th>
+                                                        <td style ="text-align:right;">$350.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style ="text-align:left;">10 hours of practice</th>
+                                                        <td style ="text-align:right;">$525.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style ="text-align:left;">15 hours of practice</th>
+                                                        <td style ="text-align:right;">$730.00</td>
+                                                    </tr>
+                                                </table>
+                                                <br>
+                                                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                    <tr>
+                                                        <th style ="text-align:left;">Individual rent for road test</th>
+                                                        <td style ="text-align:right;">$85.00</td>
+                                                    </tr>
+                                                </table>
+                                
+                                                <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                                    <span class="btn__text">send request</span>
+                                                    <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="price-table__list row city" id="Pawtucket">
+                                            <div class="col-md-6 col-md-push-3">
+                                                <div class="price-table__item price-table__item_best">
+                                        
+                                                    <div class="price-table__value">Pawtucket</div>
+                                    
+                                                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                        <tr>
+                                                            <th style ="text-align:left;">Individual classes (per hour)</th>
+                                                            <td style ="text-align:right;">$50.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th style ="text-align:left;">2 hours of practice</th>
+                                                            <td style ="text-align:right;">$90.00</td>
+                                                        </tr>
+                                                    </table>
+                                                    <h3 class="price-table__name">Packages</h3>
+                                                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                        <tr>
+                                                            <th style ="text-align:left;">6 hours of practice</th>
+                                                            <td style ="text-align:right;">$350.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th style ="text-align:left;">10 hours of practice</th>
+                                                            <td style ="text-align:right;">$525.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th style ="text-align:left;">15 hours of practice</th>
+                                                            <td style ="text-align:right;">$730.00</td>
+                                                        </tr>
+                                                    </table>
+                                                    <br>
+                                                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                        <tr>
+                                                            <th style ="text-align:left;">Individual rent for road test</th>
+                                                            <td style ="text-align:right;">$85.00</td>
+                                                        </tr>
+                                                    </table>
+                                    
+                                                    <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                                        <span class="btn__text">send request</span>
+                                                        <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="price-table__list row city" id="CentralFalls">
+                                                <div class="col-md-6 col-md-push-3">
+                                                    <div class="price-table__item price-table__item_best">
+                                            
+                                                        <div class="price-table__value">Central Falls</div>
+                                        
+                                                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                            <tr>
+                                                                <th style ="text-align:left;">Individual classes (per hour)</th>
+                                                                <td style ="text-align:right;">$50.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th style ="text-align:left;">2 hours of practice</th>
+                                                                <td style ="text-align:right;">$90.00</td>
+                                                            </tr>
+                                                        </table>
+                                                        <h3 class="price-table__name">Packages</h3>
+                                                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                            <tr>
+                                                                <th style ="text-align:left;">6 hours of practice</th>
+                                                                <td style ="text-align:right;">$350.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th style ="text-align:left;">10 hours of practice</th>
+                                                                <td style ="text-align:right;">$525.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th style ="text-align:left;">15 hours of practice</th>
+                                                                <td style ="text-align:right;">$730.00</td>
+                                                            </tr>
+                                                        </table>
+                                                        <br>
+                                                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                            <tr>
+                                                                <th style ="text-align:left;">Individual rent for road test</th>
+                                                                <td style ="text-align:right;">$85.00</td>
+                                                            </tr>
+                                                        </table>
+                                        
+                                                        <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                                            <span class="btn__text">send request</span>
+                                                            <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-table__list row city" id="Woonsoket">
+                                                    <div class="col-md-6 col-md-push-3">
+                                                        <div class="price-table__item price-table__item_best">
+                                                
+                                                            <div class="price-table__value">Woonsoket</div>
+                                            
+                                                            <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                <tr>
+                                                                    <th style ="text-align:left;">Individual classes (per hour)</th>
+                                                                    <td style ="text-align:right;">$55.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th style ="text-align:left;">2 hours of practice</th>
+                                                                    <td style ="text-align:right;">$100.00</td>
+                                                                </tr>
+                                                            </table>
+                                                            <h3 class="price-table__name">Packages</h3>
+                                                            <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                <tr>
+                                                                    <th style ="text-align:left;">6 hours of practice</th>
+                                                                    <td style ="text-align:right;">$395.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th style ="text-align:left;">10 hours of practice</th>
+                                                                    <td style ="text-align:right;">$575.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th style ="text-align:left;">15 hours of practice</th>
+                                                                    <td style ="text-align:right;">$795.00</td>
+                                                                </tr>
+                                                            </table>
+                                                            <br>
+                                                            <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                <tr>
+                                                                    <th style ="text-align:left;">Individual rent for road test</th>
+                                                                    <td style ="text-align:right;">$85.00</td>
+                                                                </tr>
+                                                            </table>
+                                            
+                                                            <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                                                <span class="btn__text">send request</span>
+                                                                <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="price-table__list row city" id="Cumberland">
+                                                        <div class="col-md-6 col-md-push-3">
+                                                            <div class="price-table__item price-table__item_best">
+                                                    
+                                                                <div class="price-table__value">Cumberland</div>
+                                                
+                                                                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                    <tr>
+                                                                        <th style ="text-align:left;">Individual classes (per hour)</th>
+                                                                        <td style ="text-align:right;">$55.00</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th style ="text-align:left;">2 hours of practice</th>
+                                                                        <td style ="text-align:right;">$100.00</td>
+                                                                    </tr>
+                                                                </table>
+                                                                <h3 class="price-table__name">Packages</h3>
+                                                                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                    <tr>
+                                                                        <th style ="text-align:left;">6 hours of practice</th>
+                                                                        <td style ="text-align:right;">$395.00</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th style ="text-align:left;">10 hours of practice</th>
+                                                                        <td style ="text-align:right;">$575.00</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th style ="text-align:left;">15 hours of practice</th>
+                                                                        <td style ="text-align:right;">$795.00</td>
+                                                                    </tr>
+                                                                </table>
+                                                                <br>
+                                                                <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                    <tr>
+                                                                        <th style ="text-align:left;">Individual rent for road test</th>
+                                                                        <td style ="text-align:right;">$85.00</td>
+                                                                    </tr>
+                                                                </table>
+                                                
+                                                                <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                                                    <span class="btn__text">send request</span>
+                                                                    <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="price-table__list row city" id="CollegeHills">
+                                                            <div class="col-md-6 col-md-push-3">
+                                                                <div class="price-table__item price-table__item_best">
+                                                        
+                                                                    <div class="price-table__value">College Hills</div>
+                                                    
+                                                                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                        <tr>
+                                                                            <th style ="text-align:left;">Individual classes (per hour)</th>
+                                                                            <td style ="text-align:right;">$50.00</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th style ="text-align:left;">2 hours of practice</th>
+                                                                            <td style ="text-align:right;">$90.00</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <h3 class="price-table__name">Packages</h3>
+                                                                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                        <tr>
+                                                                            <th style ="text-align:left;">6 hours of practice</th>
+                                                                            <td style ="text-align:right;">$350.00</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th style ="text-align:left;">10 hours of practice</th>
+                                                                            <td style ="text-align:right;">$525.00</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th style ="text-align:left;">15 hours of practice</th>
+                                                                            <td style ="text-align:right;">$730.00</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <br>
+                                                                    <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                        <tr>
+                                                                            <th style ="text-align:left;">Individual rent for road test</th>
+                                                                            <td style ="text-align:right;">$85.00</td>
+                                                                        </tr>
+                                                                    </table>
+                                                    
+                                                                    <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                                                        <span class="btn__text">send request</span>
+                                                                        <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="price-table__list row city" id="FoxPoint">
+                                                                <div class="col-md-6 col-md-push-3">
+                                                                    <div class="price-table__item price-table__item_best">
+                                                            
+                                                                        <div class="price-table__value">Fox Point</div>
+                                                        
+                                                                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                            <tr>
+                                                                                <th style ="text-align:left;">Individual classes (per hour)</th>
+                                                                                <td style ="text-align:right;">$50.00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style ="text-align:left;">2 hours of practice</th>
+                                                                                <td style ="text-align:right;">$90.00</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <h3 class="price-table__name">Packages</h3>
+                                                                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                            <tr>
+                                                                                <th style ="text-align:left;">6 hours of practice</th>
+                                                                                <td style ="text-align:right;">$350.00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style ="text-align:left;">10 hours of practice</th>
+                                                                                <td style ="text-align:right;">$525.00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style ="text-align:left;">15 hours of practice</th>
+                                                                                <td style ="text-align:right;">$730.00</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <br>
+                                                                        <table class="price-table__feature-list" style="width:100%; border-collapse: collapse;">
+                                                                            <tr>
+                                                                                <th style ="text-align:left;">Individual rent for road test</th>
+                                                                                <td style ="text-align:right;">$85.00</td>
+                                                                            </tr>
+                                                                        </table>
+                                                        
+                                                                        <a class="btn price-table__btn popup-bestsellers-btn" href="#">
+                                                                            <span class="btn__text">send request</span>
+                                                                            <!--<div class="data-form" data-price="$ 3 000" data-name="All included" data-active="yes"> </div>-->
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                    
+    
+</body>
+</html>
